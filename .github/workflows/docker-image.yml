@@ -18,7 +18,7 @@ jobs:
         env: 
           USER: ${{ secrets.USER }}
           PASS: ${{ secrets.PASS }}
-        run: 
+        run: |
           echo $USER
           echo $PASS
           docker build . --file Dockerfile --tag 8527431707/dcm_webserver
